@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Primera actividad evaluable de Javascript" />
+	<meta name="keywords" content="HTML5, CSS3, Javascript, calculadora, informe" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="js/codigo.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+	<title>Primera actividad evaluable de Javascript</title>
+</head>
+<body>
+
+<div id="calculadora">
+<h1>Calculadora</h1>
+<input type="text" id="arg1" size="1"> X <input type="text" id="arg2" size="1">
+<input type="button" value="Calcular!" onclick="calc()">
+<div id="result"></div>
+</div>
+<br>
+<div id="explicación">
+<p><strong>Explicación:</strong></p>
+<br>
+<p>En esta página aprenderemos como ha sido creada la calculadora que la encabeza utilizando HTML y Javascript.</p>
+<br>
+<p>En el archivo HTML definiremos los campos (<em>"input"</em>) de tipo texto donde escribiremos los números 
+de cara a realizar la operación (los campos de tipo texto aceptan letras y números por igual), además, le asignaremos una <em>"id"</em>
+a cada uno de ellos (en este caso "arg1" para el primer input y "arg2" para el segundo) y decidiremos el tamaño del campo (<em>"size"</em>).
+También colocaremos un input de tipo botón con un <em>"value"</em> (texto que aparecerá en el mismo) y un <em>"onclick"</em> 
+(este atributo funciona cuando pasamos el cursor por encima del mismo y hacemos click).</p>
+<br> 
+<p>Así:</p>
+<br>
+<p><em> < input type="text" id="arg1" size="1"> X < input type="text" id="arg2" size="1"></em></p>
+<p><em> < input type="button" value="Calcular!" onclick="calc()"></em></p>
+<br>
+<p>Por último crearemos un <em>"< div >"</em> con una id (en este caso es "result), aquí veremos el resultado de la operación.</p>
+<br>
+<p>Ahora procederemos a crear el archivo Javascript, que enlazará con el HTML descrito en el párrafo anterior.</p>
+<br>
+<p>Aquí llevaremos a cabo los siguientes pasos:</p>
+<br>
+<p>- Estableceremos la función (<em>"function"</em>), que se encargará de calcular la operación y llevarla a cabo. Es la siguiente: <em>function calc()</em></p>
+<br>
+<p>- Pondremos los valores (<em>"var"</em>) que irán en cada campo y con los que se realizará la operación. Aquí entran los id arg1 y arg2 que
+asignamos anteriormente a los input en el archivo HTML. Además hay que poner la orden <em>document.getElementById</em>, que se encargará de enlazar el archivo Javascript
+con el HTML. Esto quedará así: <em>var argOne=document.getElementById('arg1').value;</em>, y lo mismo para el segundo valor.</p>
+<br>
+<p>- Por último haremos un paso parecido al anterior para la caja que mostrará el resultado: <em>document.getElementById('result').innerHTML=argOne + ' multiplicado por ' + argTwo + ' es igual a ' + ans;</em></p>
+</div>
+<br>
+<div id="button">
+<input type="button" value="Botón" onclick="alert('¡Lo he conseguido!');" />
+</div>
+</body>
+</html>

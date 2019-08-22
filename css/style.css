@@ -1,0 +1,29 @@
+﻿* {
+	margin: 0 auto;
+}
+
+body {
+	margin-left: 10px;
+	font-family: Arial, Verdana, sans-serif;
+	background-image: url(../img/numeros.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+#calculadora {
+	margin-left: 10px;
+}
+
+#explicación {
+	width: 50%;
+	margin-left: 10px;
+	text-align: justify;
+	background-color: silver;
+	padding: 20px;
+	border: 2px solid black;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#button {
+	margin-left: 10px;
+}
